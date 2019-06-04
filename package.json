@@ -1,0 +1,12 @@
+{
+  "name": "js-codemod",
+  "description": "codemod collection for jscodeshift",
+  "author": "sasa+1 <sasaplus1@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasaplus1/js-codemod.git"
+  }
+}
