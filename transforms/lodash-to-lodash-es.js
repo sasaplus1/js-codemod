@@ -1,13 +1,11 @@
-module.exports = function transformer(file, api) {
+module.exports = function transformer(file, api, options) {
   const j = api.jscodeshift;
 
   return j(file.source)
-    .find(j.ImportDeclaration, {
-      source: {
-        type: 'Literal'
-      }
+    .find(j.ImportDeclaration)
+    .filter(function(statement) {
+      return /^lodash\/?/.test(statement.value.source.value);
     })
-    .filter(p => /^lodash\/?/.test(p.value.source.value))
     .forEach(function(statement) {
       const oldmoduleName = statement.value.source.value;
       const newModuleName = oldmoduleName.replace('lodash', 'lodash-es');
@@ -19,5 +17,7 @@ module.exports = function transformer(file, api) {
         )
       );
     })
-    .toSource();
+    .toSource({
+      quote: options.quote === 'double' ? 'double' : 'single'
+    });
 };
