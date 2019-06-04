@@ -2,19 +2,20 @@
   "name": "js-codemod",
   "description": "codemod collection for jscodeshift",
   "author": "sasa+1 <sasaplus1@gmail.com>",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1"
+  },
   "license": "MIT",
   "private": true,
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/sasaplus1/js-codemod.git"
-  },
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^2.3.0",
-    "lint-staged": "^8.1.7",
-    "prettier": "^1.17.1"
   }
 }
