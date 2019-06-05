@@ -56,6 +56,14 @@ execute below:
 $ npx jscodeshift -t https://raw.githubusercontent.com/sasaplus1/js-codemod/master/transforms/lodash-to-lodash-es.js --ignore-config=.gitignore --parser=babylon --parser-config=config.json ./src
 ```
 
+### change output quotation
+
+```console
+$ npx jscodeshift --quote=single -t https://raw.githubusercontent.com/sasaplus1/js-codemod/master/transforms/lodash-to-lodash-es.js --ignore-config=.gitignore --parser=babylon --parser-config=config.json ./src
+```
+
+for more details: [recast/lib/options.ts](https://github.com/benjamn/recast/blob/master/lib/options.ts)
+
 ## License
 
 The MIT license.
