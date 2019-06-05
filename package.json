@@ -3,15 +3,15 @@
   "description": "codemod collection for jscodeshift",
   "author": "sasa+1 <sasaplus1@gmail.com>",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^2.3.0",
-    "jest": "^24.8.0",
-    "jscodeshift": "^0.6.4",
-    "lint-staged": "^8.1.7",
-    "prettier": "^1.17.1"
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "husky": "2.3.0",
+    "jest": "24.8.0",
+    "jscodeshift": "0.6.4",
+    "lint-staged": "8.1.7",
+    "prettier": "1.17.1"
   },
   "engines": {
     "node": ">=8"
