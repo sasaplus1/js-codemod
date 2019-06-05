@@ -13,6 +13,9 @@
     "lint-staged": "^8.1.7",
     "prettier": "^1.17.1"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "license": "MIT",
   "private": true,
   "readmeFilename": "README.md",
