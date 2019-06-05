@@ -54,7 +54,6 @@ write configuration file for the parser:
     "optionalCatchBinding",
     "optionalChaining",
     "partialApplication",
-    "pipelineOperator",
     "throwExpressions"
   ]
 }
