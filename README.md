@@ -1,5 +1,7 @@
 # js-codemod
 
+[![Build Status](https://travis-ci.com/sasaplus1/js-codemod.svg?branch=master)](https://travis-ci.com/sasaplus1/js-codemod)
+
 codemod collection for [jscodeshift](https://github.com/facebook/jscodeshift)
 
 ## lodash-to-lodash-es
