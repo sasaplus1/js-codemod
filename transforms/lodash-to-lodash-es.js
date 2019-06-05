@@ -7,8 +7,8 @@ module.exports = function transformer(file, api, options = {}) {
       return /^lodash\/?/.test(statement.value.source.value);
     })
     .forEach(function(statement) {
-      const oldmoduleName = statement.value.source.value;
-      const newModuleName = oldmoduleName.replace('lodash', 'lodash-es');
+      const oldModuleName = statement.value.source.value;
+      const newModuleName = oldModuleName.replace('lodash', 'lodash-es');
 
       return j(statement).replaceWith(
         j.importDeclaration(
