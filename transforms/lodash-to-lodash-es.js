@@ -1,4 +1,4 @@
-module.exports = function transformer(file, api, options) {
+module.exports = function transformer(file, api, options = {}) {
   const j = api.jscodeshift;
 
   return j(file.source)
@@ -17,7 +17,5 @@ module.exports = function transformer(file, api, options) {
         )
       );
     })
-    .toSource({
-      quote: options.quote === 'double' ? 'double' : 'single'
-    });
+    .toSource(options);
 };
