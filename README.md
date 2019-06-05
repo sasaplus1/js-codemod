@@ -1,6 +1,7 @@
 # js-codemod
 
 [![Build Status](https://travis-ci.com/sasaplus1/js-codemod.svg?branch=master)](https://travis-ci.com/sasaplus1/js-codemod)
+[![renovate](https://badges.renovateapi.com/github/sasaplus1/js-codemod)](https://renovatebot.com)
 
 codemod collection for [jscodeshift](https://github.com/facebook/jscodeshift)
 
