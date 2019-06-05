@@ -27,24 +27,35 @@ write configuration file for the parser:
   "tokens": true,
   "ranges": true,
   "plugins": [
-    "jsx",
     "flow",
-    "asyncFunctions",
-    "classConstructorCall",
-    "doExpressions",
-    "trailingFunctionCommas",
-    "objectRestSpread",
-    ["decorators", { "decoratorsBeforeExport": true }],
-    "classProperties",
-    "exportExtensions",
-    "exponentiationOperator",
+    "jsx",
     "asyncGenerators",
+    "bigInt",
+    "classProperties",
+    "classPrivateProperties",
+    "classPrivateMethods",
+    [
+      "decorators",
+      {
+        "decoratorsBeforeExport": true
+      }
+    ],
+    "doExpressions",
+    "dynamicImport",
+    "exportDefaultFrom",
+    "exportNamespaceFrom",
     "functionBind",
     "functionSent",
-    "dynamicImport",
+    "importMeta",
+    "logicalAssignment",
     "nullishCoalescingOperator",
+    "numericSeparator",
+    "objectRestSpread",
+    "optionalCatchBinding",
     "optionalChaining",
-    "numericSeparator"
+    "partialApplication",
+    "pipelineOperator",
+    "throwExpressions"
   ]
 }
 ```
