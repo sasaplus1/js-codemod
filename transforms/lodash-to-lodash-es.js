@@ -7,15 +7,14 @@ module.exports = function transformer(file, api, options = {}) {
       return /^lodash\/?/.test(statement.value.source.value);
     })
     .forEach(function(statement) {
-      const oldModuleName = statement.value.source.value;
+      const node = Object.assign({}, statement.value);
+
+      const oldModuleName = node.source.value;
       const newModuleName = oldModuleName.replace('lodash', 'lodash-es');
 
-      return j(statement).replaceWith(
-        j.importDeclaration(
-          statement.value.specifiers,
-          j.literal(newModuleName)
-        )
-      );
+      node.source.value = newModuleName;
+
+      return j(statement).replaceWith(node);
     })
     .toSource(options);
 };
