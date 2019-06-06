@@ -8,3 +8,7 @@ import _ from 'lodash-es';
 import * as lodash from 'lodash-es';
 // TODO: comment
 import { set } from 'lodash-es';
+// lodash-es
+import es from 'lodash-es';
+// partial lodash modules
+import merge from 'lodash.merge';
