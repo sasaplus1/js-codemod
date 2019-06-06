@@ -4,7 +4,7 @@ module.exports = function transformer(file, api, options = {}) {
   return j(file.source)
     .find(j.ImportDeclaration)
     .filter(function(statement) {
-      return /^lodash\/?/.test(statement.value.source.value);
+      return /^lodash(?!-es|\.)\/?/.test(statement.value.source.value);
     })
     .forEach(function(statement) {
       const node = Object.assign({}, statement.value);
