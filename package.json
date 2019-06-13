@@ -10,7 +10,7 @@
     "husky": "2.4.1",
     "jest": "24.8.0",
     "jscodeshift": "0.6.4",
-    "lint-staged": "8.1.7",
+    "lint-staged": "8.2.1",
     "prettier": "1.17.1"
   },
   "engines": {
