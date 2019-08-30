@@ -3,6 +3,12 @@
     "config:base",
     ":automergePatch",
     ":label(renovate)",
-    ":timezone(Asia/Tokyo)"
+    ":preserveSemverRanges",
+    ":reviewer(sasaplus1)",
+    ":timezone(Asia/Tokyo)",
+    "group:definitelyTyped",
+    "group:jsUnitTest",
+    "group:linters",
+    "group:postcss"
   ]
 }
