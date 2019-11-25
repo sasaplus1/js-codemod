@@ -1,6 +1,6 @@
 # js-codemod
 
-[![test](https://github.com/sasaplus1/js-codemod/workflows/test/badge.svg)](https://github.com/sasaplus1/js-codemod)
+[![test](https://github.com/sasaplus1/js-codemod/workflows/test/badge.svg)](https://github.com/sasaplus1/js-codemod/actions?query=workflow%3Atest)
 [![Build Status](https://travis-ci.com/sasaplus1/js-codemod.svg?branch=master)](https://travis-ci.com/sasaplus1/js-codemod)
 [![renovate](https://badges.renovateapi.com/github/sasaplus1/js-codemod)](https://renovatebot.com)
 
