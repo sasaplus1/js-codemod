@@ -3,10 +3,10 @@ module.exports = function transformer(file, api, options = {}) {
 
   return j(file.source)
     .find(j.ImportDeclaration)
-    .filter(function(statement) {
+    .filter(function (statement) {
       return /^lodash(?!-es|\.)\/?/.test(statement.value.source.value);
     })
-    .forEach(function(statement) {
+    .forEach(function (statement) {
       const node = Object.assign({}, statement.value);
 
       const oldModuleName = node.source.value;
