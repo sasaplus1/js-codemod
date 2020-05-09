@@ -24,7 +24,7 @@
     "url": "https://github.com/sasaplus1/js-codemod.git"
   },
   "scripts": {
-    "fix": "eslint --cache --fix .",
+    "fix": "eslint --fix .",
     "fixpack": "npx fixpack",
     "lint": "eslint --cache .",
     "test": "jest"
